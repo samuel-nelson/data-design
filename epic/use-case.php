@@ -17,11 +17,11 @@
 			<br>
 			<h3>Steps Alfred must take to be able to make a comment on r/tippytaps</h3>
 				<ul>
-					<li>Navigate to reddit.com/r/tippytaps.</li>
-					<li>Click on the post that attracts his attention.</li>
-					<li>Scroll down until the "add comment" section is visible.</li>
-					<li>Click on the "add comment" section.</li>
-					<li>Type in whatever is on his mind.</li>
+					<li>Navigate to reddit.com/r/tippytaps</li>
+					<li>Click on the post that attracts his attention</li>
+					<li>Scroll down until the "add comment" section is visible</li>
+					<li>Click on the "add comment" section</li>
+					<li>Type in whatever is on his mind</li>
 					<li>Click submit</li>
 				</ul>
 			<h3>Steps Alfred must take to be able to edit a comment</h3>
