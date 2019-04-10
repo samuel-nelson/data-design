@@ -6,7 +6,7 @@
 	</head>
 	<body>
 		<h1>User Story</h1>
-		<p>Alfred likes to browse r/tippytaps. He wants to be able to leave and edit comments.</p>
+		<p>As a casual user, I like to browse r/tippytaps and want to be able to leave and edit comments.</p>
 			<a href="index.php">Home</a>
 	</body>
 </html>
