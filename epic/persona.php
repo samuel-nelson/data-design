@@ -14,6 +14,7 @@
 				<li><b>Age:</b> 32</li>
 				<li><b>Technology:</b> Newest Apple everything. He's got it all. iMac, MacBook, iPhone.</li>
 				<li><b>Technical proficiency:</b> 9</li>
+				<li><b>Type of user:</b> Casual</li>
 			</ul>
 		<h2>Things Alfred likes</h2>
 			<ul>
