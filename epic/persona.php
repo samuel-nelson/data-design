@@ -23,6 +23,13 @@
 				<li>Expressing his opinion</li>
 			</ul>
 			<a href="index.php">Home</a>
+		<h2>Things Alfred dislikes</h2>
+			<ul>
+				<li>Cats</li>
+				<li>Not feeling heard</li>
+				<li>Not having control over his comments</li>
+				<li>Cats</li>
+			</ul>
 	</body>
 </html>
 
