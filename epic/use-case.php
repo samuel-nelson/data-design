@@ -6,12 +6,7 @@
 	</head>
 	<body>
 		<h1>Use Case</h1>
-			<p>As a lover of all things dog, I want to see dogs having a good time.</p>
-			<p>As a lover of all things dog, be able to comment the things that are on my mind.</p>
-			<p>As a lover of all things dog, I want to be able share my reddit comments on other</p>
-			<p>parts of the web.</p>
-			<p>As a lover of all things dog, I want to be able to edit comments I made while</p>
-			<p>hastily condemming dogs I thought were less cute then Shiba Inus.</p>
+			<p>As a lover of all things dog, I want to see dogs having a good time. As a lover of all things dog, be able to comment the things that are on my mind. As a lover of all things dog, I want to be able share my reddit comments on other parts of the web. As a lover of all things dog, I want to be able to edit comments I made while hastily condemning dogs I thought were less cute then Shiba Inus.</p>
 				<br>
 			<h2>Interaction Flow:</h2>
 			<br>

@@ -23,8 +23,6 @@
 				<li>Expressing his opinion</li>
 			</ul>
 			<a href="index.php">Home</a>
-
-
 	</body>
 </html>
 
