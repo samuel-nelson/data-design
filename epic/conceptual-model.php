@@ -7,6 +7,7 @@
 	<body>
 		<h1>Conceptual Model</h1>
 		<img src="erd.jpg" alt="erd image">
+		<br/>
 		<a href="index.php">Home</a>
 	</body>
 </html>
