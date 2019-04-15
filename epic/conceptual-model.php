@@ -12,38 +12,38 @@
 			<h3>user</h3>
 				<ul>
 					<li>userId (Primary Key)</li>
-					<li>userName</li>
 					<li>userEmail</li>
+					<li>userName</li>
 				</ul>
 			<h3>post</h3>
 				<ul>
 					<li>postId (Primary Key)</li>
 					<li>postUserId (Foreign Key)</li>
-					<li>postTitle</li>
-					<li>postMedia</li>
-					<li>postText</li>
-					<li>postLink</li>
-					<li>postDate</li>
-					<li>postUserName</li>
-					<li>postTag</li>
 					<li>postCommentCount</li>
-					<li>postShare</li>
-					<li>postSave</li>
+					<li>postDate</li>
 					<li>postHide</li>
+					<li>postLink</li>
+					<li>postMedia</li>
 					<li>postReport</li>
+					<li>postSave</li>
+					<li>postShare</li>
 					<li>postsubredditId</li>
+					<li>postTag</li>
+					<li>postText</li>
+					<li>postTitle</li>
+					<li>postUserName</li>
 				</ul>
 			<h3>postComment</h3>
 				<ul>
 					<li>postCommentPostId (Foreign Key)</li>
 					<li>postCommentUserId (Foreign Key)</li>
-					<li>postCommentText</li>
-					<li>postCommentDate</li>
 					<li>postCommentCount</li>
-					<li>postCommentShare</li>
-					<li>postCommentSave</li>
+					<li>postCommentDate</li>
 					<li>postCommentHide</li>
 					<li>postCommentReport</li>
+					<li>postCommentSave</li>
+					<li>postCommentShare</li>
+					<li>postCommentText</li>
 				</ul>
 		<h2>Relations</h2>
 			<ul>
