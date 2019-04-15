@@ -6,7 +6,7 @@
 	</head>
 	<body>
 		<h1>Conceptual Model</h1>
-		<img src="erd.jpeg" alt="erd image">
+		<img src="erd.jpg" alt="erd image">
 		<br/>
 		<h2>Entities & Attributes</h2>
 			<h3>user</h3>
