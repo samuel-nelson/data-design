@@ -34,24 +34,6 @@
 					<li>Click submit</li>
 					<li>*Server saves post and displays it on the post user was on</li>
 				</ul>
-			<!-- Extra User Case
-		<h3>Steps Alfred must take to be able to edit a comment</h3>
-				<ul>
-					<li>Scroll down to comment</li>
-					<li>*Webpage moves down</li>
-					<li>Click on the 'edit' link</li>
-					<li>*Server displays previously written comment while accepting changes from end user</li>
-					<li>Retype or Delete as you wish</li>
-					<li>*Server presents edits as they are written</li>
-					<li>Click submit</li>
-					<li>*Server saves edited post and displays it on the post the user was on</li>
-				</ul> -->
 		<a href="index.php">Home</a>
-<!-- Extra User Stories.
-		<p>As a casual user, I want to see dogs having a good time.</p>
-		<p>As a casual user, be able to comment the things that are on my mind.</p>
-		<p>As a casual user, I want to be able share my reddit comments on other parts of the web.</p>
-		<p>As a casual user, I want to be able to edit comments I made while hastily condemning dogs I thought were less cute then Shiba Inus.</p>
-		<br>  -->
 	</body>
 </html>
