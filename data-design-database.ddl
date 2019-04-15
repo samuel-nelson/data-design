@@ -2,21 +2,25 @@
 alter database snelson54 character set utf8 collate utf8_unicode_ci;
 
 -- these statements will drop the tables and re-add them
-drop table if exists post;
 drop table if exists postComment;
+drop table if exists post;
 drop table if exists user;
+
 
 
 -- creates user entity
 create table user (
-	userName varchar(32) not null,
+	userId varchar(32) not null,
+   userName varchar(32) not null,
 	userEmail varchar(32) not null,
-	primary key(userName),
-	index(userName)
+	primary key(userId),
+	index(userId)
 );
 
 -- creates post entity
 create table post (
+   postId varchar (64) not null,
+   postUserId varchar(32) not null,
 	postTitle varchar(128) not null,
 	postMedia longblob null,
 	postText varchar(2187) null,
@@ -28,22 +32,25 @@ create table post (
 	postSave varchar(32) not null,
 	postHide varchar(32) not null,
 	postReport varchar(32) not null,
-	postsubredditId varchar(32) not null,
-	primary key(postTitle),
-	index(postTitle)
+	postSubredditId varchar(32) not null,
+	primary key(postId),
+	foreign key(postUserId) references user(UserId),
+	index(postId)
 );
 
 -- creates comment entity (a weak entity from an m-to-1  post --> commentPost)
 create table postComment (
+	postCommentPostId varchar (64) not null,
+	postCommentUserId varchar(32) null,
 	postCommentText varchar(2187) not null,
 	postCommentDate varchar(32) not null,
-	postCommentUserName varchar(32) null,
 	postCommentCount varchar(16) not null,
 	postCommentShare varchar(16) not null,
 	postCommentSave varchar(16) null,
 	postCommentHide varchar(16) not null,
 	postCommentReport varchar(16) not null,
-	foreign key(postCommentUserName) references user(userName)
+	foreign key(postCommentUserId) references user(userId),
+	foreign key(postCommentPostId) references post(postId)
 );
 
 

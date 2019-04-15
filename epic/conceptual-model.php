@@ -11,12 +11,15 @@
 		<h2>Entities & Attributes</h2>
 			<h3>user</h3>
 				<ul>
-					<li>userName (Primary Key)</li>
+					<li>userId (Primary Key)</li>
+					<li>userName</li>
 					<li>userEmail</li>
 				</ul>
 			<h3>post</h3>
 				<ul>
-					<li>postTitle (Primary Key)</li>
+					<li>postId (Primary Key)</li>
+					<li>postUserId (Foreign Key)</li>
+					<li>postTitle</li>
 					<li>postMedia</li>
 					<li>postText</li>
 					<li>postLink</li>
@@ -32,9 +35,10 @@
 				</ul>
 			<h3>postComment</h3>
 				<ul>
+					<li>postCommentPostId (Foreign Key)</li>
+					<li>postCommentUserId (Foreign Key)</li>
 					<li>postCommentText</li>
 					<li>postCommentDate</li>
-					<li>postCommentUserName (Foreign Key)</li>
 					<li>postCommentCount</li>
 					<li>postCommentShare</li>
 					<li>postCommentSave</li>
