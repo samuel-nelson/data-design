@@ -1,13 +1,11 @@
 -- set the database to use utf8
 alter database snelson54 character set utf8 collate utf8_unicode_ci;
 
--- allows deletion of parent tables that have children
-set foreign_key_checks=0; drop table user; set foreign_key_checks=1;
-
 -- these statements will drop the tables and re-add them
-drop table if exists user;
 drop table if exists post;
 drop table if exists postComment;
+drop table if exists user;
+
 
 -- creates user entity
 create table user (
