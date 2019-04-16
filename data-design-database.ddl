@@ -10,7 +10,7 @@ drop table if exists user;
 
 -- creates user entity
 create table user (
-	userId varchar(32) not null,
+	userId binary(16) not null,
 	userEmail varchar(32) not null,
    userName varchar(32) not null,
 	primary key(userId),
@@ -19,8 +19,8 @@ create table user (
 
 -- creates post entity
 create table post (
-   postId varchar (64) not null,
-   postUserId varchar(32) not null,
+   postId binary(16) not null,
+   postUserId binary(16) not null,
 	postCommentCount varchar(16) not null,
 	postDate varchar(32) not null,
 	postHide varchar(32) not null,
@@ -35,13 +35,14 @@ create table post (
 	postUserName varchar(32) not null,
 	primary key(postId),
 	foreign key(postUserId) references user(UserId),
-	index(postId)
+	index(postId),
+	index(postUserId)
 );
 
 -- creates comment entity (a weak entity from an m-to-1  post --> commentPost)
 create table postComment (
-	postCommentPostId varchar (64) not null,
-	postCommentUserId varchar(32) null,
+	postCommentPostId binary(16) not null,
+	postCommentUserId binary(16) null,
 	postCommentCount varchar(16) not null,
 	postCommentDate varchar(32) not null,
 	postCommentHide varchar(16) not null,
@@ -49,8 +50,10 @@ create table postComment (
 	postCommentSave varchar(16) null,
 	postCommentShare varchar(16) not null,
 	postCommentText varchar(2187) not null,
+	foreign key(postCommentPostId) references post(postId),
 	foreign key(postCommentUserId) references user(userId),
-	foreign key(postCommentPostId) references post(postId)
+	index(postCommentPostId),
+	index(postCommentUserId)
 );
 
 
