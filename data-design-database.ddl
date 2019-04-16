@@ -12,15 +12,15 @@ drop table if exists user;
 create table user (
 	userId binary(16) not null,
 	userEmail varchar(32) not null,
-   userName varchar(32) not null,
+	userName varchar(32) not null,
 	primary key(userId),
 	index(userId)
 );
 
 -- creates post entity
 create table post (
-   postId binary(16) not null,
-   postUserId binary(16) not null,
+	postId binary(16) not null,
+	postUserId binary(16) not null,
 	postCommentCount int(32) not null,
 	postDate datetime not null,
 	postHide varchar(32) not null,
@@ -29,7 +29,7 @@ create table post (
 	postSave varchar(32) not null,
 	postShare varchar(16) not null,
 	postSubredditId varchar(32) not null,
-	postText varchar(2187) null,
+	postText mediumtext null,
 	postTitle varchar(128) not null,
 	postTag varchar(16) null,
 	postUserName varchar(32) not null,
@@ -43,13 +43,13 @@ create table post (
 create table postComment (
 	postCommentPostId binary(16) not null,
 	postCommentUserId binary(16) null,
-	postCommentCount int(32) not null,
+	postCommentCount int not null,
 	postCommentDate datetime not null,
 	postCommentHide varchar(16) not null,
 	postCommentReport varchar(16) not null,
 	postCommentSave varchar(16) null,
 	postCommentShare varchar(16) not null,
-	postCommentText varchar(2187) not null,
+	postCommentText mediumtext not null,
 	foreign key(postCommentPostId) references post(postId),
 	foreign key(postCommentUserId) references user(userId),
 	index(postCommentPostId),
