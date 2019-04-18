@@ -22,7 +22,7 @@ create table post (
 	postId binary(16) not null,
 	postUserId binary(16) not null,
 	postCommentCount int(32) not null,
-	postDate datetime not null,
+	postDate varchar (32) null,
 	postHide varchar(32) not null,
 	postMedia longblob null,
 	postReport varchar(32) not null,
